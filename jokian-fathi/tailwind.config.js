@@ -3,7 +3,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'Sertifikat' : "url('../public/assets/siap-kerja.png')",
+      }
+    },
   },
   plugins: [],
+
 }
