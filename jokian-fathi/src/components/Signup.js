@@ -11,7 +11,10 @@ const Signup = ()=>{
     return(
 
         <div className='bg-black font-montserrat w-full'>
-            <img src={Logo} alt='missing logo' className=''></img>
+
+            <Link to='/'>
+                <img src={Logo} alt='missing logo' className=''></img>
+            </Link>
 
             <div className='flex flex-row'>
                 <img src={bg} alt='missing bg' className='hidden lg:flex'></img>

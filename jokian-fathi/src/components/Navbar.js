@@ -1,17 +1,22 @@
 import Logo from '../components/img/logo.svg'
 import Search from '../components/img/search.png'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     return(
         <>
             <div className='bg-black w-full flex flex-row justify-around'>
-                <img
-                    className='w-40 h-auto mr-20'
-                    src={Logo}
-                    alt='missing logo'
-                >
-                
-                </img>
+
+                <Link to='/'>
+                    <img
+                        className='w-40 h-auto mr-20'
+                        src={Logo}
+                        alt='missing logo'
+                    >
+                    
+                    </img>
+                </Link>
+               
                 <div class=" search flex justify-between items-center align-middle">
                     <div class="xl:w-96">
                         <div class="input-group relative flex flex-wrap items-stretch w-full mb-4 rounded">
@@ -31,13 +36,13 @@ const Navbar = () => {
                     </div>
                     
                 </div>
-                <div className='justify-end mt-5'>
-                    <button className='bg-customPurple w-32 h-10 font-bold text-white rounded justify-end mr-3'>
+                <div className='justify-end mt-8'>
+                    <Link to='/signup' className ='py-2 px-5 bg-customPurple w-32 h-10 font-bold text-white rounded justify-end mr-3'>
                         Sign Up
-                    </button>
-                    <button className='bg-customPurple w-32 h-10 font-bold text-white rounded'>
+                    </Link>
+                    <Link to='/login' className='py-2 px-5 bg-customPurple w-32 h-10 font-bold text-white rounded'>
                         Login
-                    </button>
+                    </Link>
                     </div>
             </div>
         </>

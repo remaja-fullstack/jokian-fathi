@@ -23,6 +23,7 @@ import gopay from '../components/img/gopay.png'
 import linkaja from '../components/img/linkaja.png'
 import bca from '../components/img/bca.png'
 import dana from '../components/img/dana.png'
+import { Link } from 'react-router-dom'
 
 const Landing = () => {
     return(
@@ -189,7 +190,7 @@ const Landing = () => {
 
                 
             </div>
-            <button className='border-4 rounded-xl border-black shadow-lg py-3 px-5 my-10 flex content-center items-center mx-auto'>Find Another Category</button>
+            <Link to='/category' className='border-4 rounded-xl border-black shadow-lg py-3 px-5 my-10 flex content-center items-center mx-auto w-56 text-center'>Find Another Category</Link>
             
         </div>
         <div className='py-20 bg-[#F3F3F3] mx-5 rounded-2xl'>
