@@ -17,10 +17,13 @@ import book from '../components/img/book.png'
 import question from '../components/img/question.png'
 import saturn from '../components/img/saturn.png'
 import platform from '../components/img/platform.png'
+import Navbar from '../components/Navbar';
 
 
 const Kelas = ()=>{
     return(
+    <>
+        <Navbar/>
         <div className='flex flex-row flex-wrap lg:flex-nowrap'>
             <div className='flex flex-col'>
                 <img src={hero} alt = "missing img" className='mt-4 -ml-4'></img>
@@ -87,6 +90,7 @@ const Kelas = ()=>{
                 </div>
             </div>
         </div>
+    </>
     );
 }
 
