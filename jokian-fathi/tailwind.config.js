@@ -9,6 +9,9 @@ module.exports = {
       },
       colors : {
         'customPurple' : '#5E48E8'
+      },
+      backgroundImage :{
+        'landing' : "url('../src/components/img/coverlanding.png')",
       }
     },
   },
