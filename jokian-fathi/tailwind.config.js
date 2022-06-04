@@ -18,7 +18,13 @@ module.exports = {
     fontFamily: {
       montserrat: ['Montserrat'],
       lato : ['Lato']
-    }
+    },
+    colors : {
+      'customPurple' : '#5E48E8'
+    },
+    backgroundImage :{
+      'landing' : "url('../src/components/img/coverlanding.png')",
+    },
   },
   plugins: [],
 
